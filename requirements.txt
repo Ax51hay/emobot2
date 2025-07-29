@@ -1,5 +1,1 @@
 Flask
-scikit-learn
-nltk
-numpy
-scipy
