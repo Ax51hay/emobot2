@@ -14,7 +14,7 @@ def chat():
         session["history"] = []
         session["step"] = 1
         session["name"] = ""
-        bot_msg = "I am your emotional support guide, what is your name?"
+        bot_msg = "I am EmoBot, your emotional support guide. What is your name?"
         session["history"].append(("bot", bot_msg))
 
 
@@ -45,7 +45,7 @@ def chat():
             session["history"].append(("user", message_input))
             bot_msg = "Got it"
             session["history"].append(("bot", bot_msg))
-            bot_msg = "Your daily check in has concluded."
+            bot_msg = "Your daily check in has concluded. Please come back tomorrow."
             session["history"].append(("bot", bot_msg))
             session["step"] = 5
 
